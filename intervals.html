@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intervals</title>
+    <link rel="stylesheet" href="intervals.css">
+</head>
+<body>
+    <h1>Intervals</h1>
+    <h2>What would you like to know</h2>
+    <div class="rad_menu">
+        <input type="radio" name="menu_select" id="rad_notes" onclick = "rad_notes()">
+        <label for="rad_notes">Notes</label>
+        <input type="radio" name="menu_select" id="rad_intervals" onclick = "rad_interval()">
+        <label for="rad_intervals">Intervals</label>
+    </div>
+    <div class="form_notes" id = "form_notes">
+        <h3>Notes</h3>
+        <div class="inside">
+            <div class="startnote">
+                <label for="start_note">Start Note</label>
+                <select name="start_note" id="start_note">
+                    <option id ="C_1">C</option>
+                    <option id ="D_1">D</option>
+                    <option id ="E_1">E</option>
+                    <option id ="F_1">F</option>
+                    <option id ="G_1">G</option>
+                    <option id ="A_1">A</option>
+                    <option id ="B_1">B</option>
+                </select>
+            </div>
+            <div class="accidental">
+                <label for="accidental">Accidental</label>
+                <select name="accidental" id="accidental">
+                    <option id ="normal_1">-</option>
+                    <option id ="flat_1">♭</option>
+                    <option id ="sharp_1">♯</option>
+                </select>
+            </div>
+            <div class="number1">
+                <form autocomplete="off">
+                    <label for="number_note1">Number of Note</label>
+                    <input type="text" name="number_note1" id="number_note1">
+                </form>
+            </div>
+            <div class="interval">
+                <label for="interval">Interval</label>
+                <select name="interval" id="interval">
+                    <option id ="P1">Perfect Unison (P1)</option>
+                    <option id ="m2">Minor Second (m2)</option>
+                    <option id ="M2">Major Second (M2)</option>
+                    <option id ="m3">Minor Third (m3)</option>
+                    <option id ="M3">Major Third (M3)</option>
+                    <option id ="P4">Perfect Fourth (P4)</option>
+                    <option id ="A4">Augmented Fourth (A4)</option>
+                    <option id ="d5">Diminished Fifth (d5)</option>
+                    <option id ="P5">Perfect Fifth (P5)</option>
+                    <option id ="m6">Minor Sixth (m6)</option>
+                    <option id ="M6">Major Sixth (M6)</option>
+                    <option id ="m7">Minor Seventh (m7)</option>
+                    <option id ="M7">Major Seventh (M7)</option>
+                    <option id ="P8">Perfect Octave (P8)</option>
+                    <option id ="m9">Minor Ninth (m9)</option>
+                    <option id ="M9">Major Ninth (M9)</option>
+                    <option id ="m10">Minor Tenth (m10)</option>
+                    <option id ="M10">Major Tenth (M10)</option>
+                    <option id ="P11">Perfect Eleventh (P11)</option>
+                    <option id ="A11">Augmented Eleventh (A11)</option>
+                    <option id ="d12">Diminished Twelfth (d12)</option>
+                    <option id ="P12">Perfect Twelfth (P12)</option>
+                    <option id ="m13">Minor Thirteenth (m13)</option>
+                    <option id ="M13">Major Thirteenth (M13)</option>
+                    <option id ="m14">Minor Fourteenth (m14)</option>
+                    <option id ="M14">Major Fourteenth (M14)</option>
+                    <option id ="P15">Perfect Fifteenth (P15)</option>
+                </select>
+            </div>
+        </div>
+        <br><br>
+        <button onclick="BtnForm1()">Confirm</button>
+    </div>
+    <div class="form_interval" id = "form_interval">
+        <h3>Interval</h3>
+        <div class="inside">
+            <div class="startnote">
+                <label for="start_note">Start Note</label>
+                <select name="start_note" id="start_note">
+                    <option id="C_2">C</option>
+                    <option id="D_2">D</option>
+                    <option id="E_2">E</option>
+                    <option id="F_2">F</option>
+                    <option id="G_2">G</option>
+                    <option id="A_2">A</option>
+                    <option id="B_2">B</option>
+                </select>
+            </div>
+            <div class="accidental1">
+                <label for="accidental">Accidental</label>
+                <select name="accidental" id="accidental">
+                    <option id="normal_2">-</option>
+                    <option id="sharp_2">♯</option>
+                    <option id="flat_2">♭</option>
+                </select>
+            </div>
+            <div class="number2">
+                <form autocomplete="off">
+                    <label for="number_note2">Number of Note</label>
+                    <input type="text" name="number_note2" id="number_note2">
+                </form>
+            </div>
+            <div class="secondnote">
+                <label for="second_note">Second Note</label>
+                <select name="start_note" id="start_note">
+                    <option id="C_3">C</option>
+                    <option id="D_3">D</option>
+                    <option id="E_3">E</option>
+                    <option id="F_3">F</option>
+                    <option id="G_3">G</option>
+                    <option id="A_3">A</option>
+                    <option id="B_3">B</option>
+                </select>
+            </div>
+            <div class="accidental2">
+                <label for="accidental">Accidental</label>
+                <select name="accidental" id="accidental">
+                    <option id="normal_3">-</option>
+                    <option id="sharp_3">♯</option>
+                    <option id="flat_3">♭</option>
+                </select>
+            </div>
+            <div class="number3">
+                <form autocomplete="off">                
+                    <label for="number_note3">Number of Note</label>
+                    <input type="text" name="number_note3" id="number_note3">
+                </form>
+            </div>
+        </div>
+        <br><br>
+        <button onclick="BtnForm2()">Confirm</button>
+    </div>
+    <script src="intervals.js"></script>
+</body>
+</html>
